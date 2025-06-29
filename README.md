@@ -1,4 +1,4 @@
-# WatchRun - File Watcher & Command Runner
+# WatchRun
 
 A modern, cross-platform CLI tool that monitors file changes and automatically executes commands. Perfect for development workflows, build automation, and continuous testing.
 
@@ -145,8 +145,10 @@ make windows        # Cross-compile for Windows (requires MinGW)
 
 ### Installation
 ```bash
-make install        # Install to /usr/local/bin (Unix)
-make uninstall      # Remove from system
+make install              # Install to /usr/local/bin (Unix)
+make install-termux      # Install to $PREFIX/bin (Termux)
+make uninstall-termux    # Remove from $PREFIX/bin (Termux)
+make uninstall            # Remove from system
 ```
 
 ### Development
@@ -166,5 +168,26 @@ make package        # Create distribution package
 5. Create Pull Request
 
 ## License
+```
+MIT License
 
-MIT License - feel free to use and modify as needed.
+Copyright (c) 2025 DitzDev
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
